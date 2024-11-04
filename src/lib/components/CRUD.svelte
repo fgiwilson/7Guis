@@ -16,7 +16,7 @@
 	let search = $state<string>('');
 
 	const filteredPeople = $derived(
-		search ? people.filter((p) => p.surName.toLowerCase().startsWith(search)): people
+		search ? people.filter((p) => p.surName.toLowerCase().startsWith(search)) : people
 	);
 
 	function create() {

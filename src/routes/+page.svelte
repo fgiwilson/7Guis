@@ -10,8 +10,9 @@
 		more, and is my implementation of the
 		<a
 			class="font-semibold text-sky-500 hover:text-sky-600"
-			href="https://eugenkiss.github.io/7guis/" target="_blank">7 GUIs example</a
-		>. This project is my personal intro to Svelte 5 and its new runes system.<br>
-        <span class="font-semibold text-lime-300">-Ian</span>
+			href="https://eugenkiss.github.io/7guis/"
+			target="_blank">7 GUIs example</a
+		>. This project is my personal intro to Svelte 5 and its new runes system.<br />
+		<span class="font-semibold text-lime-300">-Ian</span>
 	</p>
 </div>

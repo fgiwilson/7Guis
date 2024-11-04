@@ -13,7 +13,7 @@
 	let nRadius = $state(20);
 	let nColor = $state('#000000');
 
-	function initCanvas(element: HTMLCanvasElement) {
+	function initCanvas(canvas: HTMLCanvasElement) {
 		ctx = canvas.getContext('2d')!;
 		canvas.width = 500;
 		canvas.height = 500;
@@ -82,22 +82,33 @@
 	<button class="my-3 rounded-md bg-blue-500 px-3 py-1 text-white hover:bg-blue-700" onclick={clear}
 		>Clear Canvas</button
 	>
-	<div class="flex flex-row mb-3 gap-3">
+	<div class="mb-3 flex flex-row gap-3">
 		<div class="flex flex-col">
 			<label for="radius">Circle Radius</label>
 			<input type="range" min="1" max="100" bind:value={nRadius} id="radius" />
 		</div>
 		<div class="flex flex-col">
 			<label for="color">Circle Color</label>
-			<input type="color" bind:value={nColor} id="color" class=" m-1 w-10 h-10 form-control-color" />
+			<input
+				type="color"
+				bind:value={nColor}
+				id="color"
+				class=" form-control-color m-1 h-10 w-10"
+			/>
 		</div>
 	</div>
 
-	<canvas bind:this={canvas} onclick={handleClick} use:initCanvas class="h-full w-full form-control rounded-md"> </canvas>
+	<canvas
+		bind:this={canvas}
+		onclick={handleClick}
+		use:initCanvas
+		class="form-control h-full w-full rounded-md"
+	>
+	</canvas>
 </div>
 
 <style>
-	canvas {    
+	canvas {
 		border: 1px solid #ccc;
 		border-radius: 10px;
 		background-color: #f0f0f0;
