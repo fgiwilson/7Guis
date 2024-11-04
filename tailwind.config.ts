@@ -6,7 +6,12 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				lexend: ['Lexend', 'sans-serif'],
+				quicksand: ['Quicksand', 'sans-serif']
+			}
+		}
 	},
 
 	plugins: [typography, forms]
